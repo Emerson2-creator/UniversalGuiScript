@@ -355,3 +355,7 @@ local freakyGuiButton = MainTab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ShutUpJamesTheLoser/freaky/refs/heads/main/fe", true))()
     end,
 })
+
+ --Tool Tab
+
+local ToolTab = Window:CreateTab("🛠️Tools", nil) -- Title, Image
