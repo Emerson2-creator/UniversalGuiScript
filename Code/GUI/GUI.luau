@@ -324,6 +324,15 @@ local Button = MainTab:CreateButton({
     end,
 })
 
+--Walk on walls
+
+local Button = MainTab:CreateButton({
+    Name = "Walk on walls",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Emerson2-creator/UniversalGuiScript/refs/heads/main/Code/Scripts/wallwalk.luau"))()
+    end,
+})
+
 local MainSection = MainTab:CreateSection("SUS Script")
 
 -- SUS Scripts
@@ -380,31 +389,4 @@ local tpToolButton = ToolTab:CreateButton({
     end,
 })
 
--- Button to load the "Fling Tool" script
-
-local flingToolButton = ToolTab:CreateButton({
-    Name = "Fling Tool",
-    Callback = function()
-        local player = game.Players.LocalPlayer
-        local mouse = player:GetMouse()
-        local tool = Instance.new("Tool")
-        tool.RequiresHandle = false
-        tool.Name = "Fling Tool"
-
-        tool.Activated:Connect(function()
-            local target = mouse.Target
-            if target and target.Parent and target.Parent:FindFirstChild("Humanoid") then
-                local targetHumanoidRootPart = target.Parent:FindFirstChild("HumanoidRootPart")
-                if targetHumanoidRootPart then
-                    local bodyVelocity = Instance.new("BodyVelocity")
-                    bodyVelocity.Velocity = Vector3.new(0, 100, 0) -- Adjust the fling force as needed
-                    bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000)
-                    bodyVelocity.Parent = targetHumanoidRootPart
-                    game.Debris:AddItem(bodyVelocity, 0.1) -- Remove the BodyVelocity after 0.1 seconds
-                end
-            end
-        end)
-
-        tool.Parent = player.Backpack
-    end,
-})
+ 
