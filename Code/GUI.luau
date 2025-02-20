@@ -327,3 +327,27 @@ local Toggle = MainTab:CreateToggle({
 })
 
 
+local MainSection = MainTab:CreateSection("SUS Script")
+
+    --SUS Scripts 
+
+    local Button = MainTab:CreateButton({
+        Name = "Jerk (R6, Not by me)",
+        Callback = function()
+               loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+        end,
+     })
+
+     local Button = MainTab:CreateButton({
+        Name = "Sus GUI (Not by me)",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/FWwdST5Y"))()
+        end,
+     })
+
+     local Button = MainTab:CreateButton({
+        Name = "Freaky GUI (Not by me)",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ShutUpJamesTheLoser/freaky/refs/heads/main/fe", true))()
+        end,
+     })
