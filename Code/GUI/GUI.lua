@@ -463,7 +463,7 @@ local MainSection = ToolTab:CreateSection("Tools")
 local Button = ToolTab:CreateButton({
     Name = "Run Tool",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Emerson2-creator/UniversalGuiScript/refs/heads/main/Code/Scripts/runtool.luau'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Emerson2-creator/UniversalGuiScript/refs/heads/main/Code/Scripts/runtool.lua'))()
     end,
 })
 
@@ -472,7 +472,7 @@ local Button = ToolTab:CreateButton({
 local tpToolButton = ToolTab:CreateButton({
     Name = "Tp Tool",
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Emerson2-creator/UniversalGuiScript/refs/heads/main/Code/Scripts/tptool.luau'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Emerson2-creator/UniversalGuiScript/refs/heads/main/Code/Scripts/tptool.lua'))()
     end,
 })
 
