@@ -332,8 +332,6 @@ local Button = MainTab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/wallwalker.lua"))()
     end,
 })
- 
--- Fling
 
 -- Função para obter a raiz do personagem
 local function getRoot(char)
