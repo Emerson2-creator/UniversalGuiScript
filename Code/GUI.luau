@@ -327,8 +327,3 @@ local Toggle = MainTab:CreateToggle({
 })
 
 
-local GuiTab = Window:CreateTab("GUI/SCRIPTS", nil) -- Title, Image
-
-local MainSection = GuiTab:CreateSection("Script not by me")
-
-    --Scripts not by Me
