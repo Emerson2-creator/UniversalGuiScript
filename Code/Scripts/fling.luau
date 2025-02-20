@@ -70,17 +70,3 @@ local function deactivateFling(player)
         end
     end
 end
-
-local Toggle = MainTab:CreateToggle({
-    Name = "Fling", -- Toggle name
-    CurrentValue = false, -- Initial value
-    Flag = "ToggleFling", -- Flag is the identifier for the config file
-    Callback = function(Value)
-        local player = game.Players.LocalPlayer
-        if Value then
-            activateFling(player)
-        else
-            deactivateFling(player)
-        end
-    end,
-})
